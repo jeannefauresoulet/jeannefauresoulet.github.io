@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>CV — Jeanne Faure-Soulet</title>
+  <style>
+    /* Même mise en page que le CV français de Jeanne, traduit en anglais. */
+    @page { size: A4; margin: 0; }
+    * { box-sizing: border-box; }
+    :root {
+      --brown: #5a4330;
+      --sand: #ece3d7;
+      --line: #d9cdbd;
+      --text: #1f1a17;
+      --muted: #6f655d;
+    }
+    html, body { margin: 0; }
+    body {
+      width: 210mm; height: 297mm;
+      padding: 10mm 15mm 0;
+      font: 9.2pt/1.38 "Inter", sans-serif;
+      color: var(--text);
+      -webkit-print-color-adjust: exact; print-color-adjust: exact;
+    }
+    a { color: inherit; }
+
+    /* En-tête */
+    header { display: flex; align-items: center; gap: 7mm; }
+    .photo { flex: none; width: 30mm; height: 30mm; border-radius: 50%; object-fit: cover; }
+    .head-main { flex: 1; }
+    h1 { margin: 0; font-size: 25pt; font-weight: 400; line-height: 1.1; letter-spacing: -0.3px; }
+    h1 b { font-weight: 800; }
+    .sub { margin: 2px 0 7px; font-size: 9pt; }
+    .goal { padding: 5px 10px; border-left: 4px solid var(--brown); background: var(--sand); }
+    .goal strong { display: block; font-size: 11pt; font-weight: 700; }
+    .goal span { color: var(--brown); font-weight: 600; font-size: 9.6pt; }
+    .head-row { display: flex; align-items: center; gap: 6mm; }
+    .head-row .goal { flex: 1; }
+    .qr { flex: none; text-align: center; font-size: 6pt; font-weight: 700; color: var(--brown); }
+    .qr img { display: block; width: 16mm; height: 16mm; margin-bottom: 1px; }
+
+    /* Bandeau contact */
+    .contact {
+      display: flex; justify-content: space-around; align-items: center;
+      margin: 5mm 0 3mm; padding: 6px 10px; border-radius: 6px;
+      background: var(--brown); color: #fff; font-weight: 700; font-size: 8.8pt;
+    }
+    .contact .sep { opacity: 0.6; font-weight: 400; }
+    .contact a { text-decoration: underline; }
+
+    /* Sections */
+    h2 {
+      margin: 9px 0 6px; padding-bottom: 3px;
+      color: var(--brown); font-size: 10.5pt; font-weight: 800; letter-spacing: 1.3px;
+      text-transform: uppercase; border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0; }
+    .item { margin-bottom: 6px; }
+    .item-head { display: flex; justify-content: space-between; gap: 8px; }
+    .item-head strong { font-weight: 700; }
+    .item-head .plain { font-weight: 400; }
+    .date { flex: none; color: var(--brown); font-weight: 700; font-size: 8.6pt; }
+    .where { color: var(--muted); }
+    ul { margin: 2px 0 0; padding-left: 15px; }
+
+    .skills { display: grid; grid-template-columns: 24mm 1fr; row-gap: 2px; margin: 0; }
+    .skills dt { font-weight: 700; }
+    .skills dd { margin: 0; }
+    .interests { display: grid; grid-template-columns: 1fr 1fr; row-gap: 2px; column-gap: 6mm; }
+    .interests b { font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="photo" src="photo-cv.jpg" alt="" />
+    <div class="head-main">
+      <h1>Jeanne <b>FAURE-SOULET</b></h1>
+      <p class="sub">JUNIA–HEI · 4th year · Specialisation in Innovative Chemistry and Ecological Transition</p>
+      <div class="head-row">
+        <div class="goal">
+          <strong>Looking for a chemistry internship abroad</strong>
+          <span>3 months between April and July 2027</span>
+        </div>
+        <div class="qr"><img src="qr-linkedin.png" alt="" />LinkedIn</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="contact">
+    <span>+33 6 37 99 18 14</span><span class="sep">|</span>
+    <span>jeanne.faure-soulet@student.junia.com</span><span class="sep">|</span>
+    <span>Lille, France</span><span class="sep">|</span>
+    <a href="https://www.linkedin.com/in/jeanne-faure-soulet-b374193aa">LinkedIn</a>
+  </div>
+
+  <h2>Profile</h2>
+  <p>
+    4th-year engineering student at JUNIA–HEI, specialising in Innovative Chemistry and
+    Ecological Transition. I am passionate about chemistry because it helps us understand the
+    world around us and actually help others. I am particularly interested in medicinal and
+    pharmaceutical chemistry, medical research and formulation. Motivated, curious and reliable,
+    I enjoy getting involved and taking initiative within a team.
+  </p>
+
+  <h2>Professional experience</h2>
+  <div class="item">
+    <div class="item-head"><strong>Erasmus+ BIP Programme – Polymers for Health</strong><span class="date">Nov. 2026 · 1 week</span></div>
+    <div class="where">POLITEHNICA University of Bucharest, Romania</div>
+    <ul><li>Intensive programme in English: lab work on biopolymers (hydrogels, 3D printing) and scientific poster.</li></ul>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>Chemistry research internship – Water treatment</strong><span class="date">May – June 2026 · 2 months</span></div>
+    <div class="where">University of Genoa (UNIGE), chemistry laboratory · Italy</div>
+    <ul>
+      <li>Degradation of persistent pollutants in wastewater (drug residues, dyes).</li>
+      <li>Electrochemistry experiments, including the electrosynthesis of hydrogen peroxide (H₂O₂).</li>
+      <li>Optimisation of the treatment by varying the experimental parameters.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>Babysitter <span class="plain">· Aix-en-Provence</span></strong><span class="date">Sept. 2020 – Mar. 2025</span></div>
+    <div class="where">Regular childcare and organisation of the children's daily activities</div>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>Geoscience laboratory placement <span class="plain">· CEREGE, Aix-en-Provence</span></strong><span class="date">Dec. 2021</span></div>
+    <div class="where">Data collection and analysis alongside researchers</div>
+  </div>
+
+  <h2>Projects</h2>
+  <div class="item">
+    <div class="item-head"><strong>Design of a sustainable production unit for varoglutamstat <span class="plain">· JUNIA–HEI</span></strong><span class="date">2026 – 2027</span></div>
+    <ul>
+      <li>Molecule studied in Alzheimer's disease · year-long group project (5 students).</li>
+      <li>Literature review: mechanism of action, synthesis routes, market, safety and environmental impact.</li>
+      <li>Goal: a 3 t/year pharmaceutical-grade plant, from choosing the process to sizing it.</li>
+    </ul>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>How can JUNIA reduce its carbon footprint? <span class="plain">· JUNIA–HEI</span></strong><span class="date">2025 – 2026</span></div>
+    <div class="where">Group project: analysis of the school's emissions and proposed solutions</div>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>TIPE, group research project presented to a jury <span class="plain">· Lycée Dumont d'Urville</span></strong><span class="date">2023 – 2025</span></div>
+  </div>
+
+  <h2>Education</h2>
+  <div class="item">
+    <div class="item-head"><strong>Engineering degree – Innovative Chemistry and Ecological Transition <span class="plain">· JUNIA–HEI, Lille</span></strong><span class="date">2025 – 2028</span></div>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>Classes préparatoires PCSI – PC <span class="plain">· Lycée Dumont d'Urville, Toulon</span></strong><span class="date">2023 – 2025</span></div>
+    <div class="where">Undergraduate courses preparing for competitive entrance exams to engineering schools</div>
+  </div>
+  <div class="item">
+    <div class="item-head"><strong>French Baccalauréat in Maths and Physics-Chemistry, with distinction <span class="plain">· Lycée Georges Duby, Aix-en-Provence</span></strong><span class="date">2023</span></div>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Synthesis</dt><dd>Organic synthesis · Reflux setup · Extraction · Recrystallisation · Distillation</dd>
+    <dt>Analysis</dt><dd>TLC · NMR · IR spectroscopy (FTIR) · UV-visible spectrophotometry · Titration</dd>
+    <dt>Languages</dt><dd>French: mother tongue · English: B2 · Spanish: B1</dd>
+    <dt>Tools</dt><dd>Word · Excel · PowerPoint</dd>
+  </dl>
+
+  <h2>Interests</h2>
+  <div class="interests">
+    <div><b>Artistic gymnastics (10 years)</b> · willpower and perseverance</div>
+    <div><b>Athletics</b> · motivation and pushing my limits</div>
+    <div><b>Piano</b> · sensitivity and concentration</div>
+    <div><b>Travelling</b> · discovering other cultures and adapting</div>
+    <div><b>BAFA</b> · leading and supervising groups</div>
+    <div><b>PSC1</b> · trained in first aid</div>
+  </div>
+</body>
+</html>
